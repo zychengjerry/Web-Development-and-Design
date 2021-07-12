@@ -1,0 +1,196 @@
+/* This is my style sheet */
+
+/* body formatting */
+body {background-color: white}
+
+/* Format of caption for greater visibility */
+caption {font-size: 13px;
+    font-family: serif;
+    font-weight: bold;
+    color: blue}
+
+/* Format of table */
+table {
+    border-collapse: collapse;
+    /* The width of this area is 80% of full table */
+    width: 80%;
+    /* top margin is 50 pixel but others (right, bottom, left) are 0 */
+    margin: 50px 0 0 0;
+    /* the color of border is lightblue */
+    border: lightskyblue;
+    /* the color of background is white */
+    background-color: white;
+    /* Adding drag bar */
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* internal space in the cells of the table. */
+th, td {
+    /* top padding is 10px, right padding is 60px, both bottom and left padding are 10px. */
+    padding: 10px 60px 10px 10px;
+    /* The text are align to left. */
+    text-align: left;
+}
+
+td{
+    /* No border */
+    border: none;
+}
+
+th {
+    /* the color of background is lightskyblue */
+    background-color: lightskyblue;
+    /* the color of text is white */
+    color: white;
+    /* No border */
+    border: none;
+}
+
+/* the color of hover is whitesmoke, which aims to highlight the area we selected. */
+tr:hover {background-color: whitesmoke;}
+
+/* CSS rules for navigation division */
+#navigation {
+    /* The width of this area is 100% of full form */
+    width: 100%;
+    /* The height of this area is 45px */
+    height: 55px;
+    /* fix the position */
+    position: fixed;
+    /* eliminates small gap at top of the page */
+    top: 0;
+    /* This border has 6px radius corner */
+    border-radius: 6px;
+}
+
+/* Menu division: format the menu generally including background colour and style */
+#menu {
+    /* The width of this area is 100% of full menu */
+    width: 100%;
+    /* The height of this area is 45px */
+    height: 55px;
+    /* set the text font */
+    font-size: 15px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    /* The text are align to left. */
+    text-align: left;
+    /* the color of background is darkgray */
+    background-color: darkgray;
+    /* This border has 6px radius corner */
+    border-radius: 6px;
+}
+
+/* Menu division: format the unordered list so that it appears directly below the title of the page and below the edge of the colour background */
+#menu ul {
+    /* The height of this area is auto */
+    height: auto;
+    /* The top and bottom padding are 8px, the right and left padding are 0px */
+    padding: 8px 0;
+    /* None of margin */
+    margin: 0;
+}
+
+/* Menu division: format the list items so that they display across the page instead of in a vertical list */
+#menu li {
+    display: inline;
+    /* Four inner padding are all 20px */
+    padding: 20px;
+}
+
+/* Menu division: format the link items so that they are dark blue, spaced apart, and do not have underlines */
+#menu a {
+    text-decoration: none;
+    color: #000000;
+    /* Four inner padding are all 8px */
+    padding: 8px;
+}
+
+/* mouse over link, the color of text will change to white when mouse hovering */
+#menu a:hover {
+    color: white;
+}
+
+/* Pull down button style */
+.dropbtn {
+    background-color:darkgray;
+    color:black;
+    /* The height of this area is 45px */
+    height: 45px;
+    /* set the text font */
+    font-size: 15px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    padding:16px;
+    border:none;
+    cursor:pointer;
+    border-radius:6px;
+}
+.dropbtn::after {
+    content:" ";
+    width:0;
+    height:0;
+    display:inline-block;
+    border:6px solid  white;
+    margin-left:3px;
+    vertical-align:middle;
+    border-top-width:12px;
+    border-bottom-width:0;
+    border-left-color:transparent;
+    border-right-color:transparent;
+}
+
+.dropdown {
+    position:relative;
+    display:inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display:none;
+    position:absolute;
+    background-color:darkgray;
+    min-width:160px;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/* Link to the drop-down menu */
+.dropdown-content a {
+    color:black;
+    padding:12px 16px;
+    text-decoration:none;
+    display:block;
+}
+/* Move the mouse over and change the color of the drop-down menu link */
+.dropdown-content a:hover {
+    background-color:gray;
+    box-shadow:0 0 2px #eee;
+}
+/* A drop - down menu is displayed after mouse - over */
+.dropdown:hover .dropdown-content {
+    display:block;
+}
+/* Modify the background color of the drop-down button after the drop-down content is displayed */
+.dropdown:hover .dropbtn {
+    background-color:gray;
+}
+
+#indexTop img {
+    /* The width of this area is 100% of full screen */
+    width: 100%;
+    /* The height of this area is auto */
+    height: auto;
+}
+
+#logo img {
+    /* The width of this image is 95px, and the height is auto-resizing with width */
+    width: 95px;
+    height: auto;
+    /* Four inner padding are all 5px */
+    padding: 5px;
+    /* This image will float to left of screen */
+    float: left;
+    /* right margin is 50px */
+    margin-right: 50px;
+}

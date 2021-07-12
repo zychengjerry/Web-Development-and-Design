@@ -1,0 +1,238 @@
+/* This is my style sheet */
+
+/* body formatting */
+body {background-color: white}
+
+/* Form formatting */
+form {background: whitesmoke;
+    /* top margin is 50 pixel but others (right, bottom, left) are 0 */
+    margin: 50px 0 0 0;
+    /* The font is Georgia */
+    font-family: Georgia, serif;
+    /* border is 2px wide and the color is lightblue */
+    border: 2px solid lightblue;
+    /* This border has 5px radius corner */
+    border-radius: 5px;
+    /* Four inner padding are all 7px */
+    padding: 7px;
+}
+
+/* The set of input area which the type is "text" */
+input[type="text"] {
+    /* The width of this area is 90% of full form */
+    width: 90%;
+    /* top margin is 10 pixel and bottom margin is 20 pixel */
+    margin: 10px 0 20px 0;
+    /* Four inner padding are all 10px */
+    padding: 10px;
+}
+
+/* The set of input area which the type is "radio" */
+input[type=radio] {
+    /* top margin is 10 pixel and bottom margin is 20 pixel */
+    margin: 10px 0 20px 0;
+}
+
+/* The set of input area which the type is "submit" */
+input[type=submit] {
+    /* Background color of submit button is lightblue */
+    background-color: lightblue;
+    /* The color of text on the button is white */
+    color: white;
+    /* Four inner padding are all 10px */
+    padding: 10px;
+    /* No border */
+    border: none;
+    /* This border has 4px radius corner */
+    border-radius: 4px;
+    /* The cursor will be changed into a hand when mouse move to the button */
+    cursor: pointer;
+}
+
+/* The set of input area which the type is "submit", and it will be highlighted when the mouse hovers */
+input[type=submit]:hover{
+    background-color: lightskyblue;
+}
+
+/* The set of input area which the type is "reset" */
+input[type=reset] {
+    /* Background color of submit button is darkgray */
+    background-color: darkgray;
+    /* The color of text on the button is white */
+    color: white;
+    /* Four inner padding are all 10px */
+    padding: 10px;
+    /* No border */
+    border: none;
+    /* This border has 4px radius corner */
+    border-radius: 4px;
+    /* The cursor will be changed into a hand when mouse move to the button */
+    cursor: pointer;
+}
+
+/* The set of input area which the type is "reset", and it will be highlighted when the mouse hovers */
+input[type=reset]:hover{
+    background-color: gray;
+}
+
+/* The set of text area */
+textarea {
+    /* The width of this area is 90% of full form */
+    width: 90%;
+    /* top margin is 10 pixel and bottom margin is 20 pixel */
+    margin: 10px 0 20px 0;
+    /* Four inner padding are all 10px */
+    padding: 10px;
+    /* This border has 4px radius corner */
+    border-radius: 4px;
+}
+
+/* The set of input area which the type is "text", and the border will appear when selecting the input area */
+input[type=text]:focus {
+    /* The border is 3px width and the color is whitesmoke */
+    border: 3px solid whitesmoke;
+}
+
+/* CSS rules for navigation division */
+#navigation {
+    /* The width of this area is 100% of full form */
+    width: 100%;
+    /* The height of this area is 45px */
+    height: 55px;
+    /* fix the position */
+    position: fixed;
+    /* eliminates small gap at top of the page */
+    top: 0;
+    /* This border has 6px radius corner */
+    border-radius: 6px;
+}
+
+/* Menu division: format the menu generally including background colour and style */
+#menu {
+    /* The width of this area is 100% of full menu */
+    width: 100%;
+    /* The height of this area is 45px */
+    height: 55px;
+    /* set the text font */
+    font-size: 15px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    /* The text are align to left. */
+    text-align: left;
+    /* the color of background is darkgray */
+    background-color: darkgray;
+    /* This border has 6px radius corner */
+    border-radius: 6px;
+}
+
+/* Menu division: format the unordered list so that it appears directly below the title of the page and below the edge of the colour background */
+#menu ul {
+    /* The height of this area is auto */
+    height: auto;
+    /* The top and bottom padding are 8px, the right and left padding are 0px */
+    padding: 8px 0;
+    /* None of margin */
+    margin: 0;
+}
+
+/* Menu division: format the list items so that they display across the page instead of in a vertical list */
+#menu li {
+    display: inline;
+    /* Four inner padding are all 20px */
+    padding: 20px;
+}
+
+/* Menu division: format the link items so that they are dark blue, spaced apart, and do not have underlines */
+#menu a {
+    text-decoration: none;
+    color: #000000;
+    /* Four inner padding are all 8px */
+    padding: 8px;
+}
+
+/* mouse over link, the color of text will change to white when mouse hovering */
+#menu a:hover {
+    color: white;
+}
+
+/* Pull down button style */
+.dropbtn {
+    background-color:darkgray;
+    color:black;
+    /* The height of this area is 45px */
+    height: 45px;
+    /* set the text font */
+    font-size: 15px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    padding:16px;
+    border:none;
+    cursor:pointer;
+    border-radius:6px;
+}
+.dropbtn::after {
+    content:" ";
+    width:0;
+    height:0;
+    display:inline-block;
+    border:6px solid  white;
+    margin-left:3px;
+    vertical-align:middle;
+    border-top-width:12px;
+    border-bottom-width:0;
+    border-left-color:transparent;
+    border-right-color:transparent;
+}
+
+.dropdown {
+    position:relative;
+    display:inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display:none;
+    position:absolute;
+    background-color:darkgray;
+    min-width:160px;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/* Link to the drop-down menu */
+.dropdown-content a {
+    color:black;
+    padding:12px 16px;
+    text-decoration:none;
+    display:block;
+}
+/* Move the mouse over and change the color of the drop-down menu link */
+.dropdown-content a:hover {
+    background-color:gray;
+    box-shadow:0 0 2px #eee;
+}
+/* A drop - down menu is displayed after mouse - over */
+.dropdown:hover .dropdown-content {
+    display:block;
+}
+/* Modify the background color of the drop-down button after the drop-down content is displayed */
+.dropdown:hover .dropbtn {
+    background-color:gray;
+}
+
+#indexTop img {
+    /* The width of this area is 100% of full screen */
+    width: 100%;
+    /* The height of this area is auto */
+    height: auto;
+}
+
+#logo img {
+    /* The width of this image is 95px, and the height is auto-resizing with width */
+    width: 95px;
+    height: auto;
+    /* Four inner padding are all 5px */
+    padding: 5px;
+    /* This image will float to left of screen */
+    float: left;
+    /* right margin is 50px */
+    margin-right: 50px;
+}

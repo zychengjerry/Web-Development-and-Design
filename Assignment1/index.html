@@ -1,0 +1,349 @@
+<!Doctype html>
+
+<html lang="en">
+
+<!-- HEADER section -->
+<head>
+    <!-- This statement tells browsers how to understand our characters. -->
+    <meta charset="utf-8">
+    <!-- This is my title. -->
+    <title> My Index</title>
+    <!-- this meta name is to identify website version in JSBin -->
+    <meta name="description" content="index">
+    <!-- Link to the css file -->
+    <link rel="stylesheet" type="text/css" href="CSS/me.css" title="CSS1" ID="CSS1">
+    <link rel="stylesheet" type="text/css" href="CSS/alternativeCSS.css" title="CSS2" ID="CSS2" DISABLED>
+    <!--The Function to change CSS File-->
+    <script>
+        function changeCss(id)
+        {
+            for(var i=1;i<5;i++)
+            {
+                document.getElementById("CSS" + i).disabled = i !== id;
+            }
+        }
+    </script>
+</head>
+
+
+<!-- Body section -->
+<body>
+
+<!-- This is the anchor tag for "home" menu item -->
+<a id="home"></a>
+
+<!-- insert the image "indexTop" at the top of web page -->
+<div id="indexTop">
+    <img src="Images/Index_Top.jpg" height="400" width="2000" alt="topImage"/>
+</div>
+
+<!-- open "navigation" division -->
+<div id="navigation">
+
+    <!-- open "menu" division -->
+    <div id="menu">
+        <ul>
+            <div class="dropdown">
+                <!--<button class="dropbtn">Home</button>-->
+                <a href="index.html#home"><button class="dropbtn">Home</button></a>
+                <div class="dropdown-content">
+                    <a href="index.html#about">About Me</a>
+                    <a href="index.html#imgmaps">Image Map</a>
+                    <a href="index.html#passion">My Passion</a>
+                    <a href="index.html#storyboard">Storyboard</a>
+                    <a href="index.html#video">Video</a>
+                    <a href="javascript:changeCss(1)">Gray Mode</a>
+                    <a href="javascript:changeCss(2)">Blue Mode</a>
+                </div>
+            </div>
+            <li><a href="photoGallery.html">Photo Gallery</a></li>
+            <li><a href="photoGallery4Validation.html">Validation</a></li>
+            <li><a href="sitemap.html">Site Map</a></li>
+            <li><a href="assignment.html">Assignment</a></li>
+            <li><a href="sourcelog.html">Source Log</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="aboutMySite.html">About My Site</a></li>
+        </ul>
+    <!-- close "menu" division -->
+    </div>
+
+<!-- close "navigation" division -->
+</div>
+
+<!-- This is the anchor tag for "about me" menu item -->
+<a id="about"></a>
+
+<!-- Section 1: About me -->
+<p><br></p>
+<h1>About me</h1>
+<p>Hi visitors,</p>
+<p>This is Zeyuan Cheng, studying for the master of computing in ANU.<br/></p>
+<p>I come from Xi 'an, Shaanxi Province, China, which is an international metropolis with a long history.</p>
+<p>I took the course COMP6780 because of my interest in web development and design. In addition, I hope to increase my knowledge of front-end development and broaden my horizon from teachers and classmates through the study this semester.</p>
+<p><br></p>
+
+<!-- This is the anchor tag for "Image Maps" menu item -->
+<a id="imgmaps"></a>
+<p><br></p>
+
+<!-- Image Map -->
+<!-- Source: https://www.google.com/maps/ -->
+<h3>Image Map</h3>
+
+<p>
+    Move and click the mouse, you can find more details on <i>Xi'an</i>, <i>Suzhou</i>, and <i>Canberra</i>.
+</p>
+
+<div id="imgmap">
+<img src="Images/map.PNG" height="1534" width="2736" usemap="#workmap" alt="map">
+</div>
+
+<map name="workmap">
+    <area shape="rect" coords="421,166,446,208" alt="xian" href="xian.html">
+    <area shape="rect" coords="472,199,494,219" alt="suzhou" href="suzhou.html">
+    <area shape="rect" coords="587,491,616,513" alt="actANU" href="anu.html">
+</map>
+
+<!-- This is the anchor tag for "my passion" menu item -->
+<a id="passion"></a>
+
+<!-- Section 2: My passion -->
+<p><br></p>
+<h2>My passion</h2>
+<p>
+    Photography?<br/>
+    Playing basketball?<br/>
+    Fitness?<br/>
+    ...<br/>
+    and maybe studying?<br/>
+</p>
+<p>
+    I have a wide range of interests, probably the essence of which is that I like to <strong>learn</strong> and <strong>enjoy</strong>. Anything that interests me is something I want to know about and deserves my enthusiastic attention.
+</p>
+<p><br></p>
+
+<!-- Section 2.1: Basketball -->
+<h3>Basketball</h3>
+<div id="ballPng">
+    <img src="Images/Basketball_image.png" height="280" width="560" alt="basketball"/>
+</div>
+
+<p>
+    For example, I am interested in playing basketball. First of all, I will learn to play basketball and learn the rules of basketball by watching basketball games (i.e. NBA, CBA). Before playing basketball, I will do enough "hardware preparation", such as buying good quality basketball and basketball shoes.
+    Then, I will search the Internet for some basketball skills as "software preparation", such as dribbling skills, passing skills, shooting skills and so on. In addition, I found a coach to train me to play basketball and kept it up for a year. I spend a lot of time practicing the basics of basketball on my own, and during this time I play with equal players one-on-one or many-to-many.
+    In actual combat, I found that I could improve my basketball skills rapidly and even make many friends. Gradually, I found that playing basketball can not only strengthen physical fitness, but also improve their adaptability, communication ability and team cooperation ability. While improving my basketball level, I continue to enjoy the fun of learning basketball skills, and also enjoy the fun brought by playing with people of higher level.
+    Therefore, I think I love basketball, love the process of learning to play basketball, and enjoy the fun that playing basketball brings to my life.
+</p>
+<p><br></p>
+
+<!-- This is the anchor tag for "Story board" menu item -->
+<a id="storyboard"></a>
+
+<!-- Section 2.2: Storyboard -->
+<p><br></p>
+<h3>Storyboard</h3>
+
+<p>This is my storyboard, documenting my journey from playing basketball to learning to play basketball.</p>
+
+<a href="photoGallery.html">
+    <div id="story">
+        <img src="Images/story_slide_combine.png" height="1533" width="1080" alt="storyBoard"/>
+    </div>
+</a>
+
+<!-- This is the anchor tag for "Social Networking Button 1" on assignment page -->
+<a id="social button1"></a>
+<iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fpartch.anu.edu.au%2F~u7148404%2F&layout=button&size=large&mobile_iframe=true&width=74&height=28&appId"
+        width="120" height="65" style="border:none;
+        overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+</iframe>
+
+<p><br></p>
+
+<!-- This is the anchor tag for "Video" menu item -->
+<a id="video"></a>
+
+<!-- Section 2.3: Video -->
+<p><br></p>
+<h3>Video - Basketball Dream</h3>
+
+<p><br></p>
+<p>Video title: <i>Basketball Dream</i></p>
+<p>Director: <i>Zeyuan Cheng</i></p>
+<p>Writer: <i>Zeyuan Cheng</i></p>
+<p>Shooting: <i>Zeyuan Cheng, Jingyi (Zeyuan's friend)</i></p>
+<p>Clip: <i>Zeyuan Cheng</i></p>
+<p>Time: <i>2:41</i></p>
+<p>Music: <i>League of Legends - Rise</i></p>
+<p>Composition: <i>The Word Alive/ Mako/ The Glitch Mob</i></p>
+<p>Lyrics: <i>The Glitch Mob/ Mako/ The Word Alive</i></p>
+<p><br></p>
+<!-- This is the anchor tag for "Social Networking Feed 1" on assignment page -->
+<a id="social feed1"></a>
+<p>Please see it from the beginning to the end &#9786</p>
+<p><br></p>
+
+<video width="800" height="auto" controls>
+    <source src="Video/MyVideo.mp4" type="video/mp4">
+</video>
+
+<a class="twitter-timeline" data-width="350" data-height="450" href="https://twitter.com/NBA?ref_src=twsrc%5Etfw">Tweets by NBA</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br>
+<!-- This is the anchor tag for "Social Networking Button 2" on assignment page -->
+<a id="social button2"></a>
+<a href="https://twitter.com/nba?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @nba</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p><br></p>
+
+<!-- Section 2.4: For now -->
+<h3>For Now</h3>
+<p>
+    I'm interested in web development and design. This assignment is a good practice to improve my knowledge of front-end development and broaden my horizon from teachers and classmates.
+    The mission list of this assignment are shown below:
+</p>
+
+<ul>
+    <li>Preparation of hardware and software (Computer, Editor, JSbin, Browser...). </li>
+    <li>Learn the basic concepts of HTML and CSS. </li>
+    <li>Attend lectures and lab classes on time, and practice after class.</li>
+    <li>Complete the assignment according to the standard <a href="https://wattlecourses.anu.edu.au/mod/resource/view.php?id=2137011">COMP1710/6780 Assignment and Report Specifications</a>. </li>
+    <li>Validate HTML files by using <a href="https://validator.w3.org/#validate_by_input">W3C HTML Markup Validation Service. </a> </li>
+    <li>Validate CSS files by using <a href="https://jigsaw.w3.org/css-validator/#validate_by_input+with_options">W3C CSS Markup Validation Service. </a> </li>
+    <li>Debug and develop according to <a href="feedback.html">Feedback</a>. </li>
+</ul>
+
+<p><br></p>
+
+<!-- Section 2.5: I always remember -->
+<h3>I Always Remember</h3>
+
+<p><i>Be curious about new things, be passionate about areas of interest, and enjoy life.</i></p>
+<p><br></p>
+
+<!-- This is the anchor tag for "Social Networking Feed 2" on assignment page -->
+<a id="social feed2"></a>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/B6NDEMCJziK/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+    <div style="padding:16px;">
+    <a href="https://www.instagram.com/p/B6NDEMCJziK/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+        <div style=" display: flex; flex-direction: row; align-items: center;">
+            <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+            </div>
+        </div>
+        <div style="padding: 19% 0;"></div>
+        <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+            <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                    <g>
+                        <path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path>
+                    </g>
+                </g>
+                </g>
+            </svg>
+        </div>
+        <div style="padding-top: 8px;">
+            <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:500; line-height:18px;"> View this post on Instagram</div>
+        </div>
+        <div style="padding: 12.5% 0;"></div>
+        <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+            <div>
+                <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div>
+                <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
+                <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
+            </div>
+            <div style="margin-left: 8px;">
+                <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
+                <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
+            </div>
+            <div style="margin-left: auto;">
+                <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
+                <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div>
+                <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+            <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div>
+            <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
+        </div>
+    </a>
+        <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+            <a href="https://www.instagram.com/p/B6NDEMCJziK/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Jerry Cheng (@jerrych_czy)</a>
+        </p>
+    </div>
+</blockquote> <script async src="//www.instagram.com/embed.js"></script>
+<p><br></p>
+
+<hr>
+
+<!-- insert the logo with link jumping to ANU website -->
+<a href="http://www.anu.edu.au">
+    <div id="logo">
+        <img src="Images/ANU_Logo.png" height="300" width="851" alt="anu"/>
+    </div>
+</a>
+
+<!-- Contact me -->
+<p>Contact me by E-Mail: u7148404@anu.edu.au</p>
+<br>
+<hr>
+<!-- This is the anchor tag for "Social Networking Feed 2" on assignment page -->
+<a id="original1"></a>
+<!-- Follow me -->
+<div style="text-align: center;">
+    <h3>Follow me</h3>
+<br>
+<a href="https://www.facebook.com/jerry.cheng.75248795">
+    <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="footer/idle" transform="translate(-120.000000, -130.000000)">
+                <rect fill="#F5F6F6" x="0" y="0" width="1440" height="522"></rect>
+                <g id="Icon/facebook" transform="translate(120.000000, 130.000000)" fill="#3A3A3A">
+                    <g id="footer-facebook-(1)">
+                        <path d="M20,10.0611134 C20,4.50450981 15.5228516,0 10,0 C4.47714844,0 0,4.50450981 0,10.0611134 C0,15.0829059 3.65685547,19.24522 8.4375,20 L8.4375,12.969404 L5.89843749,12.969404 L5.89843749,10.0611134 L8.4375,10.0611134 L8.4375,7.84452436 C8.4375,5.32295781 9.93042968,3.93012242 12.2146484,3.93012242 C13.3087304,3.93012242 14.4531251,4.12662855 14.4531251,4.12662855 L14.4531251,6.60260567 L13.1921484,6.60260567 C11.9499023,6.60260567 11.5625,7.37815638 11.5625,8.17380966 L11.5625,10.0611134 L14.3359375,10.0611134 L13.8925781,12.969404 L11.5625,12.969404 L11.5625,20 C16.3431445,19.24522 20,15.0829059 20,10.0611134" id="Facebook" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </svg>
+</a>
+<a href="https://www.instagram.com/jerrych_czy/">
+    <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="footer/idle" transform="translate(-165.000000, -130.000000)">
+                <rect fill="#F5F6F6" x="0" y="0" width="1440" height="522"></rect>
+                <g id="Icon/Instagram_black" transform="translate(165.000000, 130.000000)" fill="#3A3A3A">
+                    <path d="M0,10 C0,4.47715223 4.47715223,0 10,0 C15.5228478,0 20,4.47715223 20,10 C20,15.5228478 15.5228478,20 10,20 C4.47715223,20 0,15.5228478 0,10 Z M10.0005,4.66666667 C8.55204047,4.66666667 8.3702608,4.67300007 7.801366,4.69888923 C7.2335823,4.7248895 6.8460227,4.81477933 6.50690807,4.9466696 C6.15612663,5.08289323 5.85856797,5.26511733 5.56212043,5.561676 C5.26545067,5.85812353 5.08322657,6.15568217 4.94655847,6.5063525 C4.81433487,6.84557827 4.72433393,7.23324897 4.6987781,7.80081043 C4.6733334,8.36970523 4.66666667,8.55159603 4.66666667,10.0000556 C4.66666667,11.4485151 4.67311117,11.6297392 4.69888923,12.198634 C4.7250006,12.7664177 4.81489043,13.1539773 4.9466696,13.4930919 C5.08300433,13.8438734 5.26522847,14.141432 5.5617871,14.4378796 C5.85812353,14.7345493 6.15568217,14.9172179 6.5062414,15.0534415 C6.84557827,15.1853318 7.23324897,15.2752216 7.80092153,15.3012219 C8.36981637,15.327111 8.5514849,15.3334444 9.99983333,15.3334444 C11.448404,15.3334444 11.6296281,15.327111 12.1985229,15.3012219 C12.7663066,15.2752216 13.1543106,15.1853318 13.4936475,15.0534415 C13.8443178,14.9172179 14.141432,14.7345493 14.4377684,14.4378796 C14.7344382,14.141432 14.9166623,13.8438734 15.0533304,13.4932031 C15.1844429,13.1539773 15.2744438,12.7663066 15.3011108,12.1987451 C15.3266666,11.6298503 15.3333333,11.4485151 15.3333333,10.0000556 C15.3333333,8.55159603 15.3266666,8.36981637 15.3011108,7.80092153 C15.2744438,7.23313783 15.1844429,6.84557827 15.0533304,6.5064636 C14.9166623,6.15568217 14.7344382,5.85812353 14.4377684,5.561676 C14.1410987,5.26500623 13.8444289,5.0827821 13.4933142,4.9466696 C13.1533106,4.81477933 12.7655288,4.7248895 12.1977451,4.69888923 C11.6288503,4.67300007 11.4477373,4.66666667 9.99883333,4.66666667 L10.0005,4.66666667 Z" id="Combined-Shape"></path>
+                    <path d="M9.52205057,5.6277878 C9.66405207,5.62756557 9.82249817,5.6277878 10.0005,5.6277878 C11.4245148,5.6277878 11.5932944,5.63289897 12.1556336,5.65845477 C12.675639,5.6822328 12.9578641,5.7691226 13.1458661,5.84212337 C13.3947576,5.93879103 13.5722039,6.0543478 13.7587614,6.2410164 C13.94543,6.427685 14.0609867,6.60546463 14.1578766,6.85435613 C14.2308774,7.04213587 14.3178783,7.32436103 14.3415452,7.84436643 C14.367101,8.4065945 14.3726567,8.57548517 14.3726567,9.99883333 C14.3726567,11.4221815 14.367101,11.5910721 14.3415452,12.1533002 C14.3177672,12.6733056 14.2308774,12.9555308 14.1578766,13.1433105 C14.061209,13.392202 13.94543,13.5694261 13.7587614,13.7559836 C13.5720928,13.9426522 13.3948687,14.0582089 13.1458661,14.1548766 C12.9580864,14.2282107 12.675639,14.3148783 12.1556336,14.3386563 C11.5934055,14.3642121 11.4245148,14.3697677 10.0005,14.3697677 C8.57637407,14.3697677 8.40759453,14.3642121 7.84536643,14.3386563 C7.32536103,14.3146561 7.04313587,14.2277663 6.8550228,14.1547655 C6.6061313,14.0580978 6.4283517,13.9425411 6.24168307,13.7558725 C6.05501447,13.5692038 5.9394577,13.3918687 5.8425678,13.1428661 C5.76956703,12.9550863 5.68256613,12.6728612 5.65889923,12.1528558 C5.6333434,11.5906277 5.62823223,11.421737 5.62823223,9.99749997 C5.62823223,8.5732629 5.6333434,8.40526117 5.65889923,7.8430331 C5.68267727,7.32302767 5.76956703,7.0408025 5.8425678,6.85280057 C5.93923547,6.60390907 6.05501447,6.42612943 6.24168307,6.23946083 C6.4283517,6.0527922 6.6061313,5.93723547 6.8550228,5.84034557 C7.04302477,5.76701147 7.32536103,5.6803439 7.84536643,5.65645477 C8.33737157,5.6342323 8.52804023,5.62756557 9.52205057,5.62645443 L9.52205057,5.6277878 Z M12.8474185,6.51335257 C12.4940815,6.51335257 12.2074119,6.7996889 12.2074119,7.153137 C12.2074119,7.50647403 12.4940815,7.79314367 12.8474185,7.79314367 C13.2007556,7.79314367 13.4874252,7.50647403 13.4874252,7.153137 C13.4874252,6.7998 13.2007556,6.51313033 12.8474185,6.51313033 L12.8474185,6.51335257 Z M10.0005,7.26113813 C8.4879287,7.26113813 7.2615826,8.48748423 7.2615826,10.0000556 C7.2615826,11.5126269 8.4879287,12.7384174 10.0005,12.7384174 C11.5130713,12.7384174 12.738973,11.5126269 12.738973,10.0000556 C12.738973,8.48748423 11.5129602,7.26113813 10.0003889,7.26113813 L10.0005,7.26113813 Z" id="Combined-Shape"></path>
+                    <path d="M10.0005,8.22225927 C10.982288,8.22225927 11.7782963,9.01815643 11.7782963,10.0000556 C11.7782963,10.9818436 10.982288,11.7778519 10.0005,11.7778519 C9.0186009,11.7778519 8.2227037,10.9818436 8.2227037,10.0000556 C8.2227037,9.01815643 9.0186009,8.22225927 10.0005,8.22225927 L10.0005,8.22225927 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </svg>
+</a>
+<a href="https://linkedin.com/in/则远-成-a429bb125">
+    <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="footer/idle" transform="translate(-255.000000, -130.000000)">
+                <rect fill="#F5F6F6" x="0" y="0" width="1440" height="522"></rect>
+                <g id="Icon/linkedin" transform="translate(255.000000, 130.000000)" fill="#3A3A3A">
+                    <g id="footer-linkedin">
+                        <path d="M18.5204514,0 C19.3359035,0 20,0.645601965 20,1.44206388 L20,1.44206388 L20,18.5568551 C20,19.3532678 19.3359035,20 18.5204514,20 L18.5204514,20 L1.47517505,20 C0.661344632,20 0,19.3532678 0,18.5568551 L0,18.5568551 L0,1.44206388 C0,0.645601965 0.661344632,0 1.47517505,0 L1.47517505,0 L18.5204514,0 Z M5.718246,7.27311143 L2.73646958,7.27311143 L2.73646958,16.875 L5.718246,16.875 L5.718246,7.27311143 Z M13.3015562,7.03482663 C11.8522919,7.03482663 10.8803586,7.83090549 10.4831667,8.58575416 L10.4831667,8.58575416 L10.4423571,8.58575416 L10.4423571,7.27311143 L7.58695758,7.27311143 L7.58695758,16.875 L10.5621708,16.875 L10.5621708,12.1259148 C10.5621708,10.8732882 10.7986898,9.65966715 12.3486707,9.65966715 C13.8773833,9.65966715 13.8964804,11.0921444 13.8964804,12.2056067 L13.8964804,16.875 L16.875,16.875 L16.875,11.6090048 C16.875,9.02297215 16.3176286,7.03482663 13.3015562,7.03482663 Z M4.228172,2.5 C3.27148684,2.5 2.5,3.27531545 2.5,4.23048154 C2.5,5.18594425 3.27148684,5.96125969 4.228172,5.96125969 C5.18105747,5.96125969 5.95466621,5.18594425 5.95466621,4.23048154 C5.95466621,3.27531545 5.18105747,2.5 4.228172,2.5 Z" id="LinkedIn" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </svg>
+</a>
+</div>
+
+<p><br></p>
+
+<!-- Close body of webpage -->
+</body>
+
+<!-- Close html -->
+</html>
